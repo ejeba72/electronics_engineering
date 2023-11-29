@@ -1,0 +1,12 @@
+REFERENCES
+2023.nov28 tue 2002mf
+
+BASIC ELECTRONICS
+* Electronic Circuits: "https://www.youtube.com/playlist?list=PL0o_zxa4K1BV9E-N8tSExU1djL6slnjbL"
+* Beginner Electronics: "https://www.youtube.com/playlist?list=PLah6faXAgguOeMUIxS22ZU4w5nDvCl5gs"
+* Digital Electronics: "https://www.youtube.com/playlist?list=PLwjK_iyK4LLBC_so3odA64E2MLgIRKafl"
+* Basic Electrical & Electronics: "https://www.youtube.com/playlist?list=PL8T_f_7Y4chYRUJZSdtgPp57YX4RgWONj"
+
+POTENTIOMETER
+* Potentiometers - Basic Introduction: "https://youtu.be/XuBx9eQYscU"
+* Potentiometer Explained: "https://youtu.be/sWbSeJmUFfw" 
