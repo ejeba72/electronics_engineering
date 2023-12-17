@@ -1,0 +1,4 @@
+TIPS
+2023.dec15 fri 1931mf
+
+Alway include a convectional resistor, with adequate resistance value, in your ciruit where necessary. This is in order to protect items like arduino board, led, etc.

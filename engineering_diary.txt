@@ -1,0 +1,8 @@
+ENGINEERING DIARY
+2023.dec13 wed 0751mf
+This is where I pen down beautiful thoughts relating to my engineering passion. However, it could also include other area outside engineering.
+
+2023.dec13 wed 0754mf
+* I'm delighted to know that computers originated from mechanical systems, before evolving to electromechanical systems and then electronics systems. The significance of this is that the working principle of a computer can easily be embodied in a mechanical system. Furthermore, many mechanical systems can provide excellent analogy for electrical concepts. This is exciting for me! I have a mechanical background. I consider myself first and foremost a mechanical engineer (I've not yet arrived o!). But I also deeply interested in not only electronics engineering, but in the virtually every aspect of Physics! I sought of use my little knowledge of mechanics to try to understand or create analogy when learning other concepts in Physics e.g. Electricity, Quantum mechanics, etc. For me it is exciting to be interested in Mechanics, Electricity, and other Physics concepts.
+* I believe that there is difference between electromechanical systems and mechatronic systems.
+* 
