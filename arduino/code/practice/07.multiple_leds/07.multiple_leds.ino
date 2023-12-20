@@ -15,9 +15,7 @@ void setup() {
   pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
 }
-
 void loop() {
-
   int i = 0;
   while (i<5) {
     digitalWrite(redPin, HIGH);
@@ -26,8 +24,6 @@ void loop() {
     delay(delayTime);
     i++;
   } 
-
-  // i = 0;    // This may not be necessary
   while (i<10) {
     digitalWrite(greenPin, HIGH);
     delay(delayTime);
@@ -35,8 +31,6 @@ void loop() {
     delay(delayTime);
     i++;
   }
-
-  // i = 0;   // This may not be necessary
   while (i<15) {
     digitalWrite(bluePin, HIGH);
     delay(delayTime);
@@ -44,17 +38,4 @@ void loop() {
     delay(delayTime);
     i++;
   }
-
-/*
-  digitalWrite(redPin, HIGH);
-  delay(delayTime);
-  digitalWrite(redPin, LOW);
-  delay(delayTime);
-
-  digitalWrite(redPin, HIGH);
-  delay(delayTime);
-  digitalWrite(redPin, LOW);
-  delay(delayTime);
-*/
-
 }

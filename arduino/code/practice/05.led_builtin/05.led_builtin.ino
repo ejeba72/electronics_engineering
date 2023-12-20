@@ -1,8 +1,8 @@
 // Blinking builtin leds
 // 2023.dec17 sun 1737mf
 
-int shortDelayTime = 70;
-int longDelayTime = 1000;
+int shortDelayTime = 100;
+int longDelayTime = 100;
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
