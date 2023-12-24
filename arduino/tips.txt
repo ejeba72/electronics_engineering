@@ -2,3 +2,13 @@ TIPS
 2023.dec15 fri 1931mf
 
 Alway include a convectional resistor, with adequate resistance value, in your ciruit where necessary. This is in order to protect items like arduino board, led, etc.
+
+2023.dec22 fri 1348mf
+READING FROM SERIAL MONITOR
+The following are the steps to read data: Ask, Wait, Read.
+- Ask: Ask the user for data with the following command, 'Serial.println("message or prompt to user");'.
+- Wait: Wait for user to input data. For instance, you can use an empty while loop with the following condition, 'while (Serial.available() == 0) {}'
+- Read: Read data from the user when it is available with the following commands:
+  - 'Serial.parseInt();' for int
+  - 'Serial.parseFloat();' for float
+  - 'Serial.readString();' for a string

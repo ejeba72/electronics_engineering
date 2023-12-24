@@ -1,0 +1,6 @@
+2023.dec22 fri 0739mf
+
+* VOLTAGE (V): Voltage is the difference in "electric potential energy per unit charge", across two points in an electric circuit (?or field?). The unit of voltage is volt (v). 1v = 1J/C.
+
+* CURRENT (I): Current is the rate of flow of electrons. I = Q/t. The unit of current is ampere (A). 1A = 1 Coulomb per second.
+

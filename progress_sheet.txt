@@ -1,0 +1,11 @@
+PROGRESS SHEET
+2023.dec22 fri 1002mf
+This file shows the where I stop for each of my learning session.
+
+BASIC ELECTRONICS
+- 3.Voltage, current and resistance (2023.dec22 1009mf)
+- 4.Ohm's Law (2023.dec24 sun ~1100mf)
+- *suspended
+
+ARDUINO TUTORIAL
+- Arduino Tutorial 30 Understanding and Using Servos in Projects (2023.dec22 fri ~1900mf)
