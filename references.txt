@@ -10,3 +10,36 @@ BASIC ELECTRONICS
 POTENTIOMETER
 * Potentiometers - Basic Introduction: "https://youtu.be/XuBx9eQYscU"
 * Potentiometer Explained: "https://youtu.be/sWbSeJmUFfw" 
+
+CAR STEERING
+* Steering: "https://en.wikipedia.org/wiki/Steering"
+* Axle track: "https://en.wikipedia.org/wiki/Axle_track"
+* Car controls: "https://en.wikipedia.org/wiki/Car_controls"
+* Steering wheel: "https://en.wikipedia.org/wiki/Steering_wheel"
+* Automobile handling: "https://en.wikipedia.org/wiki/Automobile_handling"
+
+ARDUINO
+* Arduino Nano Code Upload Error avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00: "https://youtu.be/gian9DA7aIA"
+
+OPENSCAD
+* Charthulius Wheezer's OpenSCAD Video Series: "https://www.youtube.com/playlist?list=PLP1VMsgQcRUmC1jJhZrTId9rvjQ1m2FBH"
+* Introduction and Setup OpenSCAD-Tutorial 1: "https://youtu.be/MfBRMX6NfCE"
+* OpenSCAD Basics 2D Forms: "https://youtu.be/u50i2HHduro"
+* 3D Modeling with Code! The best demo (OpenSCAD): "https://youtu.be/KrFttd5D1cw"
+* 3D Printing: Designing with openscad: "https://youtu.be/wXpHRHgJyUE"
+* OpenSCAD 2D Functions: "https://youtu.be/bvJqVNV_FVk"
+* Create a 3D object from a 2D Plot - OpenSCAD 2D to 3D: "https://youtu.be/jx9-5DIOK1Q"
+* OpenScad Review - Worth learning?: "https://youtu.be/_uVCD7_j-L8"
+* Round Anything Openscad - Making fillets easy: "https://youtu.be/laxv2wFKq8Q"
+* Awesome 3d Printed MacBook Dock: "https://youtu.be/g7jTKDKmEME"
+
+FREECAD
+* FreeCAD 0.20 / 0.21 For Beginners Tutorials: "https://www.youtube.com/playlist?list=PLWuyJLVUNtc0UszswD0oD5q4VeWTrK7JC"
+* "MangoJelly Solutions" Youtube channel list of playlists: "https://www.youtube.com/@MangoJellySolutions/playlists"
+
+CONTROL SYSTEM
+* YouTube search: "https://www.youtube.com/results?search_query=what+is+control+system"
+
+AEROSPACE
+* The Engineering of ARF's Cyclocar VTOL: "https://youtu.be/eJtNe59VVj8"
+* The Insane Engineering behind The Lilium Jet | Part 1: "https://youtu.be/ZpdDY2rDsLI"
