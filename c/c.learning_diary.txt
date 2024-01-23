@@ -1,0 +1,15 @@
+2024jan23 tue 1851mf
+LEARNING DIARY FOR C
+
+2024jan23 tue 1852mf
+* if you need to use maths functions in c, search for "c maths functions" on the internet.
+
+* int *agePtr = &age;
+  agePtr;  // memory address;
+  *agePtr;  // value in address;
+  &age;  // memory address;
+  age;  // value in address;
+
+* A variable is a human-readable or human-friendly address.
+  OR
+  A variable is effectively a label for a memory address. (But really, what is the technical difference between assembly language label and higher programming language variable?)
