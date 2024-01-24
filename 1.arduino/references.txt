@@ -1,0 +1,10 @@
+References
+2023.dec17 sun 1423mf
+
+* arduino-cli: "https://arduino.github.io/arduino-cli/dev/commands/arduino-cli/"
+* arduino-cli monitor: "https://arduino.github.io/arduino-cli/dev/commands/arduino-cli_monitor/"
+* arduino-cli serial monitor: "https://forum.arduino.cc/t/serial-monitor-for-arduino-cli/651372"
+* arduino serial plotter: "https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-plotter"
+* arduino-cli: "https://forum.arduino.cc/t/arduino-cli-teesnsy-notes-questions-documentation/1068881"
+* led matrix editor: "https://xantorohara.github.io/led-matrix-editor/"
+* led matrix editor: "https://amperka.github.io/led-matrix-editor/"
