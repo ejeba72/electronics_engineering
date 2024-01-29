@@ -1,6 +1,7 @@
 REFERENCES
 2024.jan17 wed 1114mf
 
+* HOW TO INSTALL AVR-GNU TOOLCHAIN FOR M1 MAC: "https://kona.moe/installation-of-avr-toolchain-gtkwave-and-gnu-debugger-gdb-on-m1-macbooks/"
 * ATmega328P datasheet: "https://web.mit.edu/6.111/volume2/www/f2019/handouts/ATmega328P.pdf"
 * Programming AVR Microcontrollers in C - O'Reilly Webcast: "https://youtu.be/ERY7d7W-6nA"
 * Cornell University AVR microcontroller lectures 2012: "https://www.youtube.com/playlist?list=PLD7F7ED1F3505D8D5"
