@@ -51,11 +51,11 @@ ASSEMBLY LANGUAGE
      *** 'flash': indicates that the memory in which a memory operation would performed on, is the flash memory.
      *** 'w': write memory operation.
      *** 'i': indicate that the file is intex HEX format.
-  ** '-p' flag: literarily means 'partno'. This specifies the microcontroller to be programmed.
+  ** '-p' flag: literarily means 'partno'. This specifies the microcontroller to be programmed. 'atmega328p' = 'm328p'.
   ** '-c' flag: specifies the programmer to be used to program the microcontroller.
   ** '-P' flag: specifies the port to which the programmer is connected.
-  ** '-b' flag: specifies the baud rate for communication with the programmer.
-* NOTE: For Nano, baud rate is 57600 (115200/2). That is, '-b 57600'.
+  ** '-b' flag: specifies the baud rate for communication with the programmer. Default baud rate is 115200 baud. That is, no need to specify baud rate, if baud rate is 115200 baud.
+* NOTE: For Nano, baud rate is 57600 baud (115200/2). That is, '-b 57600'.
 * General tips, provied avrdude has been installed, you can type the following on the commandline for help or more info:
   ** 'man avrdude'
   ** 'avrdude -h'
