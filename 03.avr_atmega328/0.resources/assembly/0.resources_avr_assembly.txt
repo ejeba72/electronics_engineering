@@ -1,0 +1,4 @@
+RESOURCES: AVR ASSEMBLY
+
+* http://www.avr-asm-tutorial.net/avr_en/beginner/index.html: "http://www.avr-asm-tutorial.net/avr_en/beginner/index.html"
+* Autodesk Instructables AVR Assembler Tutorials: "https://www.instructables.com/Command-Line-AVR-Tutorials/"

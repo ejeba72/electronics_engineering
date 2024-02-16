@@ -1,4 +1,4 @@
-REFERENCES
+REFERENCES (ATmega328P)
 2024.jan17 wed 1114mf
 
 * HOW TO INSTALL AVR-GNU TOOLCHAIN FOR M1 MAC: "https://kona.moe/installation-of-avr-toolchain-gtkwave-and-gnu-debugger-gdb-on-m1-macbooks/"

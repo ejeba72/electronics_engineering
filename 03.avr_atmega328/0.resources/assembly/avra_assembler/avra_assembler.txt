@@ -1,0 +1,16 @@
+AVRA ASSEMBLER
+2024feb4 sun 2015mf
+avra repo: "https://github.com/Ro5bert/avra"
+
+AVR EXAMPLE CODES
+* matthew-macgregor/avr-assembly-examples: "https://github.com/matthew-macgregor/avr-assembly-examples"
+* Microchip's website (Get Code Examples from Atmel START): "https://onlinedocs.microchip.com/pr/GUID-549C9442-05F9-4F63-ADF3-E8E0E678948B-en-US-8/index.html?GUID-35377362-2ABE-487D-9BC5-8561786BDF8D"
+
+OTHERS
+* ATmega32 assembly program with AVRA: "https://www.hackster.io/patrick-fitzgerald2/atmega32-assembly-program-with-avra-176df9"
+* Programming Arduino and AVR Microcontrollers using the Assembly Language: "https://dumblebots.com/2022/07/31/programming-arduino-and-avr-microcontrollers-using-the-assembly-language/"
+* AVR Assembler 101: "https://www.codeproject.com/Articles/712610/AVR-Assembler"
+* AVR Assembler Tutorials: "https://www.instructables.com/Command-Line-AVR-Tutorials/"
+* AVR Assembler Tutorial 1: "https://www.instructables.com/Command-Line-Assembly-Language-Programming-for-Ard/"
+* AVR Assembler Tutorial 2: "https://www.instructables.com/Command-Line-Assembly-Language-Programming-for-Ard-1/"
+* AVR Assembly Tutorials: "http://rjhcoding.com/avr-asm-tutorials.php"
