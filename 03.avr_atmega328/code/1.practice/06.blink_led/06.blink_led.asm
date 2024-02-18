@@ -1,7 +1,7 @@
 ; 2024feb16 fri 1126mf
 ; yet another attempt, after previous failed attempts
 
-.device ATmega328P  ; Arduino Uno or Nano
+.device ATmega328P  ; That is, the name of the MCU inside the Arduino Uno or Nano
 
 .equ PORTB = 0x05
 .equ DDRB = 0x04
