@@ -1,5 +1,5 @@
 ; BLINKING RGB LED
-; 2024feb20 thu 1659mf
+; 2024feb20 tue 1659mf
 
 .device atmega328p
 

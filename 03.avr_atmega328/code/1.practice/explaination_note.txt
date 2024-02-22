@@ -1,0 +1,14 @@
+EXPLAINATION NOTE ON WHY THERE IS 'ARMLITE_VERSION' IN ATMEGA328P ASSEMBLY
+2024feb22 thu 0916mf
+
+The reason for the "armlite_version" of code for an atmega328p device is simply to practice armlite code. Otherwise, it doesn't make any sense. However, by doing this I'm giving myself the opportunity to practice two dialects of assembly language at the same, which to me is 'great gain'! :)
+
+I conceived this idea of practicing armlite code by writing armlite version of every code I write for the atmega328p mcu yesterday, the 23rd of Feb 2024, because when I had learnt avr assembly enough to be able to write it the way I like, I couldn't do certain things that I like doing in armlite assembly as part of my approach to a deeper understanding of computer architecture.
+
+More specifically, it was on Monday the 19th of February 2024 that the problem of not been able to practice certain things started. The code I wrote on that day is titled, 'BLINKING LED, FREESTYLE APPROACH'. The name of the file is '09.blink_led.asm'. As I wrote this code, I couldn't manually implement 'call' and 'ret' in the most basic way, just as I can do in armlite assembly. I wasn't happy about this at all and it was really difficult for me to indefinitely suspend practicing that aspect of my knowledge. Something that I got out of my way to intentionally and painstakely learn at the time I was still practicing armlite assembly many, many months ago in a bid to have a deeper understanding of what happens within the cpu.
+
+It is striking to me that if I had not had the aforementioned challenge with avr assembly, I may not have had the idea of practicing both avr asm and armlite asm at the same time. But now, I'm not only solving the problem I had, but I would also benefit from working with two dialects of assembly language. The armlite version may not have any functional use or purpose, but it will definitely afford me the opportunity to learn and master not just one, but two dialects of assembly language!!! You can only imagine how happy I am! :)
+
+So from now on, I would very likely have an armlite version of every code I write for atmega328p.
+
+Selah ;)
