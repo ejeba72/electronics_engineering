@@ -1,7 +1,7 @@
 EXPLAINATION NOTE ON WHY THERE IS 'ARMLITE_VERSION' IN ATMEGA328P ASSEMBLY
 2024feb22 thu 0916mf
 
-The reason for the "armlite_version" of code for an atmega328p device is simply to practice armlite code. Otherwise, it doesn't make any sense. However, by doing this I'm giving myself the opportunity to practice two dialects of assembly language at the same, which to me is 'great gain'! :)
+The reason for the "armlite_version" of code for an atmega328p device is simply to practice armlite code. Otherwise, it doesn't make any sense. However, by doing this I'm giving myself the opportunity to practice two dialects of assembly language at the same time, which to me is 'great gain'! :)
 
 I conceived this idea of practicing armlite code by writing armlite version of every code I write for the atmega328p mcu yesterday, the 23rd of Feb 2024, because when I had learnt avr assembly enough to be able to write it the way I like, I couldn't do certain things that I like doing in armlite assembly as part of my approach to a deeper understanding of computer architecture.
 
