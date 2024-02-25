@@ -1,9 +1,5 @@
 ; BLINKING LED, FREESTYLE APPROACH
 ; 2024feb19 mon 1939mf
-; 2024feb25 sun ~1400mf, 
-
-; 2ND ITERATION:
-; I wish to try a different approach to the delay loops
 
 ; I wrote the last assembly code myself, '08.blink_led.asm'. However, because I am not too conversant with avr instruction set, I adopted the little instructions that I could learn immediately. But, after writing it yesterday, I did some more reasearch, including reviewing what I had learnt before with armlite little man computer. Consequently, in this practice session, my goal is to adopt a freestyle approach in writing assembly code a little bit more in my own way. I wish to write it with my own preference.
 
@@ -37,22 +33,21 @@ blinkLoop:
   call delay
   rjmp blinkLoop
 
-; nested loop for timer
 delay:
-  ldi r20, 160  ; reg for outerLoop Count
-outerLoop:
+  ldi r20, 0xff  ; reg for innerInnerLoop
+  ldi r21, 0xff  ; reg for innerLoop
+  ldi r22, 160  ; reg for outerLoop
+  call delayLoop
+  ret
+
+; nested loop for timer
+delayLoop:
   subi r20, 1
-  ldi r21, 255  ; reg for innerLoop Count
-innerLoop:
+  brne delayLoop
   subi r21, 1
-  ldi r22, 255  ; reg for innerInnerLoop Count
-innerInnerLoop:
+  brne delayLoop
   subi r22, 1
-  brne innerInnerLoop
-  cpi r21, 0
-  brne innerLoop
-  cpi r20, 0
-  brne outerLoop
+  brne delayLoop
   ret
 
 ; halt program
@@ -60,10 +55,4 @@ innerInnerLoop:
 ;  rjmp haltLoop
 
 ; better alternative to halt program
-;  rjmp $  ; 'rjmp $' means 'keep looping on this single line of code'. '$' is the address of this line of code.
-; update (2024feb25 sun 1459mf):
-; I have recently (probably today or day before yesterday) realised that 'rjmp haltLoop' also means 'keep looping on this single line of code', because the label wil not be executed.
-
-; halt program
-pause:
-  rjmp pause
+  rjmp $  ; 'rjmp $' means keep looping on this single line of code. '$' is the address of this line of code.

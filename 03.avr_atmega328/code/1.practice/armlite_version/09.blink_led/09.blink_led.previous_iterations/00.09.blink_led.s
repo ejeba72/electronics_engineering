@@ -34,21 +34,25 @@ blinkLoop:
   b blinkLoop
 
 delay:
+  sub sp, sp, #4  ; push value in link reg, lr, to stack
+  str lr, [sp]
   mov r2, #2  ; outerLoop count
-outerLoop:
-  sub r2, r2, #1
   mov r3, #3  ; innerLoop count
-innerLoop:
-  sub r3, r3, #1
   mov r4, #3  ; innerInnerLoop count
-innerInnerLoop:
-  subs r4, r4, #1
-  bne innerInnerLoop
-  cmp r3, #0
-  bne innerLoop
-  cmp r2, #0
-  bne outerLoop
-  mov pc, lr
+  mov lr, pc  ; call delayLoop subroutine
+  b delayLoop
+  ldr lr, [sp]  ; pop value from stack to link reg, lr
+  add sp, sp, #4
+  mov lr, pc  ; return from delay subroutine
+
+delayLoop:
+  subs r4, r4, #1  ; innerInnerLoop
+  bne delayLoop
+  subs r3, r3, #1  ; innerLoop
+  bne delayLoop
+  subs r2, r2, #1  ; outerLoop
+  bne delayLoop
+  mov pc, lr  ; return from delayLoop subroutine
 
 pause:
   b pause
