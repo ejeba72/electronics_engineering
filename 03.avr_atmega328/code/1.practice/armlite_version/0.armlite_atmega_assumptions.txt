@@ -1,0 +1,10 @@
+1721mf mon 18mar2024
+ATMEGA ASSUMPTIONS FOR ARMLITE
+
+
+*  offset for DDRD = 0x002a0
+*  offset for PORTD = 0x002b0
+
+
+* For the sake of learning by practice, I have decided to randomly use any reg as my link reg, instead of lr. This is because I know it really doesn't matter. Furthermore, as long as I don't use the bl and ret instructions, I can use the lr reg for the purpose of a general reg. However, I know that I should be careful with not deleting or modifying the value in such register at the 'wrong' time. I wish I can explain better, but it's so difficult to articulate myself :(.
+* Again for the sake of learning by practice, I will use the same general purpose registers that I have used in the main routine, in all the sub-routines. This will force me to use the stack multiple times, which implies practicing push and pop.
