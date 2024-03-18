@@ -33,7 +33,7 @@
 
 ; blinking leds
 ; to-do:
-  * A combo should blink 40 times. Then another combo will blink 40 time. And so on. For example, Green and Blue will blink 40 times. Then Green and Red will blink 40 times. After that, Blue and Red will blink 40 times. Then it will return to Green and Blue blinking 40 times.
+; * A combo should blink 40 times. Then another combo will blink 40 time. And so on. For example, Green and Blue will blink 40 times. Then Green and Red will blink 40 times. After that, Blue and Red will blink 40 times. Then it will return to Green and Blue blinking 40 times.
 
 greenAndBlue:
   mov r4, #4  ; Green led
@@ -71,7 +71,7 @@ shortDelay:
 
 longDelay:
   push {r3,r4}
-  mov r3, #120  ; you can use #2 when stepping through your code or slow delay on armlite
+  mov r3, #120  ; you can use #6 when stepping through your code or slow delay on armlite
   mov r4, pc
   b delay
   pop {r3,r4}
