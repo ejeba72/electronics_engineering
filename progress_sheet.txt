@@ -2,6 +2,9 @@ PROGRESS SHEET
 2023.dec22 fri 1002mf
 This file shows the where I stop for each of my learning session.
 
+1240mf fri 26apr2024
+I have not been updating my progress for sometime now. I'll try to resume so.
+
 BASIC ELECTRONICS
 - 3.Voltage, current and resistance (2023.dec22 1009mf)
 - 4.Ohm's Law (2023.dec24 sun ~1100mf)

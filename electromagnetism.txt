@@ -1,0 +1,16 @@
+1244mf fri 26apr2024
+The following are my inductions, deductions and hypotheses from my study of the electromagnetism session of my University Physics textbook by Sears And Zemansky, 12th edition.
+
+1246mf fri 26apr2024
+Chapter 21, Electric Charge And Electric Field
+* Introduction
+INDUCTION:
+	Electric charge is analoguous to mass. In fact, both mass and electric charge are fundamental properties of matter.
+	If a particle has no mass, gravitational force cannot accelerate such a particle. Also, if a particle does not have an electric charge, an electric force cannot accelerate it.
+HYPOTHESIS:
+	Force is force regardless of the source just as water is water regardless of whether it is from a river, rain, stream, underground etc. Adjectives such as "gravitational" or "electric" that is used to qualify or classify the force simply try to indicate what is generating the force.
+	My rational for this hypothesis is from the relationship between mass, acceleration and force in the equation, F = ma. And my intelligent guess is that this relationship will always be valid regardless of the source of the force. Furthermore, I perceive that if m ~ 0, i.e. if m is approximately equal to zero, the particle will accelerate to the speed of light which, from my present knowledge, is the ultimate speed of the universe. Examples of particles that behalf like this are electromagnetic wave, photons etc (I stand to be corrected o!).
+	In other words, the magnitude of acceleration of any particle by "any" force is always determined by the mass of suh particle, regardless of what is generating the force.
+INDUCTION:
+	Electric current is analoguous to a stream of water. Just as gravitational force causes water to move in a stream or river, that's how an electric force causes streams of particles that have net electric charge to move within a wire.
+INDUCTION:
