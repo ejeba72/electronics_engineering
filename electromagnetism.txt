@@ -1,5 +1,11 @@
+EXECUTIVE SUMMARY
+* The electric charge of a particle determines how it interacts with other electrically charged particles as well as how it behaves in an electromagnetic field.
+
+
+
+INDUCTIONS, DEDUCTIONS AND HYPOTHESES
 1244mf fri 26apr2024
-The following are my inductions, deductions and hypotheses from my study of the electromagnetism session of my University Physics textbook by Sears And Zemansky, 12th edition.
+The following are my inductions, deductions and hypotheses of my study of the electromagnetism session of my University Physics textbook by Sears And Zemansky, 12th edition.
 
 1246mf fri 26apr2024
 Chapter 21, Electric Charge And Electric Field
@@ -14,3 +20,7 @@ HYPOTHESIS:
 INDUCTION:
 	Electric current is analoguous to a stream of water. Just as gravitational force causes water to move in a stream or river, that's how an electric force causes streams of particles that have net electric charge to move within a wire.
 INDUCTION:
+
+
+
+

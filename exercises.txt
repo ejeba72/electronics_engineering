@@ -1,0 +1,17 @@
+0910mf mon 6may2024
+
+UNIVERSITY PHYSICS BY SEARS AND ZEMANSKY
+
+Example 21.1
+object is an alpha particle
+mass m = 6.64*10^-27 kg
+charge q = +2e = 3.2*10^-19 C
+
+compare electric and gravitational forces between two alpha particles.
+
+Solution:
+Fe = (4#E)^-1.q1q2r^-2
+Fg = Gm1m2r^-2
+Fe/Fg = [(4#E)^-1.q1q2r^-2]/[Gm1m2r^-2]
+= (4#E)^-1.q1q2.(Gm1m2)^-1.r^-2.r^2
+= q1q2/(4#E.Gm1m2)
