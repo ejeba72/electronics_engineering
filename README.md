@@ -39,8 +39,14 @@ ASSEMBLY LANGUAGE
   - a comment,
   - a combination of the above, or
   - an empty line.
-- The maximum number of entities in a line of assembly code is 4. Namely:
-  [label:] instruction/directive [operands] [; comment]
+- The maximum number of entities in a line of assembly code is four (4), Namely:
+  - label (e.g. startLoop:)
+  - instruction/directive
+  - operands
+  - comment  (e.g. ; This is a comment)
+- This is how a typical line of assembly code could be written:
+  - [label:] instruction/directive [operands] [; comment]
+  - The square bracket indicate that those components within the square brackets are optional for a line of instruction or directive. Also, it is possible to write a comment or a label in its own line. However, operands can only follow an instruction if required. In other words, operands cannot be written in seperate lines. Nonetheless, there is no need to cram or memorise these details the understanding would come naturally as one continues to learn and practice.
 
 -ASSEMBLE AND FLASH ASSEMBLY CODE
 - 'avra 06.filename.asm'
