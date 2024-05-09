@@ -1,0 +1,2 @@
+; 0820mf thu 9may2024
+; I am starting from scratch after a long time away from practicing assembly language coding. I feel bad that I have lost ground or should I say that I am brain rusty. However, it was due to circumstances beyond my control. Nonetheless, I pray that I will be able to recover lost grounds and become consistent with learning and practicing microcontroller programming, breadboard prototyping etc. May the force be with me! :)
