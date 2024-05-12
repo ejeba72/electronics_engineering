@@ -61,16 +61,16 @@ ASSEMBLY LANGUAGE
   - "-p" flag: literarily means "partno". This specifies the microcontroller to be programmed. NOTE: "atmega328p" is the same as "m328p".
   - "-c" flag: specifies the programmer to be used to program the microcontroller.
   - "-P" flag: specifies the port to which the programmer is connected.
-    - NOTE: you can use the following commands to find the port where the programmer is connected on your computer:
-      - Unix, Linux or Mac:
-        - "ls /dev/cu.*" or
-        - "ls /dev | grep cu" or
-        - "ls /dev | grep usb" (if the connection is specifically a USB connection)
-        - NOTE: cu (communications, unbuffered) is preferred to tty (teletype) when flashing microcontrollers.
-      - Windows: "mode" This will list all available COM ports in Command Prompt.
+  - NOTE: you can use the following commands to find the port where the programmer is connected on your computer:
+    - Unix, Linux or Mac:
+      - "ls /dev/cu.*" or
+      - "ls /dev | grep cu" or
+      - "ls /dev | grep usb" (if the connection is specifically a USB connection)
+      - NOTE: cu (communications, unbuffered) is preferred to tty (teletype) when flashing microcontrollers.
+    - Windows: "mode" This will list all available COM ports in Command Prompt.
   - "-b" flag: specifies the baud rate for communication with the programmer. Default baud rate is 115200 baud. That is, no need to specify baud rate, if baud rate is 115200 baud.
-- NOTE: For Nano, baud rate is 57600 baud (115200/2). That is, "-b 57600".
-- General tips, provided avrdude has been installed, you can type the following on the commandline for help or more info:
+  - NOTE: For Nano, baud rate is 57600 baud (115200/2). That is, "-b 57600".
+- GENERAL TIPS: Provided avrdude has been installed, you can type the following on the commandline for help or more info:
   - "man avrdude"
   - "avrdude -h"
 
