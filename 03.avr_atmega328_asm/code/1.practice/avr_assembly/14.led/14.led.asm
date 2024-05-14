@@ -33,4 +33,4 @@ innerInner:
   cpi r20, 0
   brne outer
   ret
-  rjmp $                         ; halt program
+  rjmp $                         ; halt program (For this program, this line is redundant because "blinkLed" is an unconditional loop)
