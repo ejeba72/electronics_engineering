@@ -77,11 +77,13 @@ ASSEMBLY LANGUAGE
  ARDUINO-CLI
 - General tip, provided arduino-cli has been installed:
   - On the commandline, type "arduino-cli -h" for the various commands
-- compile tip:
+- Compile tip:
   - type "arduino-cli compile -h" to know more about the compile command. The same approach for other commands.
-- upload command:
+- Upload command:
   - "arduino-cli upload /home/user/Arduino/MySketch -p /dev/ttyACM0 -b arduino:avr:uno"
   - NOTE: When uploading to Nano board with old bootloader, -b is "arduino:avr:nano:cpu=atmega328old". That is, include "cpu=atmega328old" to the board name flag. Source: "https://github.com/arduino/arduino-cli/issues/538".
+- Serial monitor tip:
+  - "arduino-cli monitor -p /dev/ttyACMO"
 
 REFERENCES:
 - The C Programming Language, 2nd Edition (ANSI Edition): "https://ia903407.us.archive.org/35/items/the-ansi-c-programming-language-by-brian-w.-kernighan-dennis-m.-ritchie.org/The%20ANSI%20C%20Programming%20Language%20by%20Brian%20W.%20Kernighan%2C%20Dennis%20M.%20Ritchie.pdf"
