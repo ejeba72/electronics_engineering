@@ -1,4 +1,4 @@
-; 0758mf sat 18may2024
+; ~0900mf sun 19may2024
 ; PUSH BUTTON FOR DUAL BLINKING LED
 
 ; Blue light  --> arduino pin2 = PD2. Therefore bitmask = 0b00000100 (3rd bit) = 0x04 = 4
