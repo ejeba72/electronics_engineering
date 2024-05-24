@@ -1,4 +1,4 @@
-; ~1000mf thu 23may2024
+; ~1000mf,~1200mf fri 24may2024
 ; Button Experiment
 ; Using a Push-up button as a Toggle button.
 ; Logic: When the previous reg receives a value of zero, then check the value in the present reg.
