@@ -1,6 +1,6 @@
 ; 1942mf fri 24may2024
 ; Button Experiment
-; Using a Push-up button as a Toggle button.
+; Using a Pull-up button as a Toggle button.
 ; Logic: When the previous reg receives a value of zero, then check if the value in the present reg is 1.
 
 ; PIND  = 0x29
