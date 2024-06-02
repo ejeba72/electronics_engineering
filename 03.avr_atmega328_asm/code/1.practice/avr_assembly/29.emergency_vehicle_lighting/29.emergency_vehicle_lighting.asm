@@ -9,7 +9,16 @@
 ; - Write logic to switch on each of the three emergency lighting options Green & Blue, Green & Red, Blue & Red.
 ; - Write logic to turn emergency lights off.
 
+; pind = 0x29
+; ddrd = 0x2a
+; portd = 0x2b
+
 .device atmega328p
+
+  ldi r18, 0                       ; R18 is made a zero reg.
+  ldi r19, 0b00001000              ; Data direction bitmask.
+toggleButton:
+  rjmp toggleButton
 
 btnDelay:
   push r18, r19, r20
