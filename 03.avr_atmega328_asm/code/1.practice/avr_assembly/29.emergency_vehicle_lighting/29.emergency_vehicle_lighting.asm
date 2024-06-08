@@ -17,8 +17,21 @@
 
   ldi r18, 0                       ; R18 is made a zero reg.
   ldi r19, 0b00001000              ; Data direction bitmask.
-toggleButton:
-  rjmp toggleButton
+;toggleBtn:
+;  rjmp toggleBtn
+
+  sts 0x2b, r19
+lightLed:
+  rjmp lightLed
+
+pullDownBtn:
+;  lds r20, 029
+;  cpi r20, 0b00000100
+;  breq onLed
+;  sts 0x2b, r18                    ; Turn off the led.
+;onLed:
+;  sts 0x2b, r19
+;  rjmp pullDownBtn
 
 btnDelay:
   push r18, r19, r20
