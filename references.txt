@@ -1,6 +1,9 @@
 REFERENCES
 2023.nov28 tue 2002mf
 
+ASSEMBLY LANGUAGE LANGUAGE
+https://draftsbook.com/assembly-language-constants-and-variables/
+
 How does a driveshaft work? What is a CV joint? Automotive systems explained!: "https://youtu.be/tf5PO4KxYNY"
 
 PROGRAMMING ADVICE
