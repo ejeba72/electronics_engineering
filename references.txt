@@ -3,6 +3,8 @@ REFERENCES
 
 ASSEMBLY LANGUAGE LANGUAGE
 https://draftsbook.com/assembly-language-constants-and-variables/
+https://electronicsdesk.com/assembler-directives.html
+https://en.wikipedia.org/wiki/Assembly_language
 
 How does a driveshaft work? What is a CV joint? Automotive systems explained!: "https://youtu.be/tf5PO4KxYNY"
 
