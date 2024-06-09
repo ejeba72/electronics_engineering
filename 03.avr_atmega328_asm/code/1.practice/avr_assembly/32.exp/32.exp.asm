@@ -17,19 +17,14 @@
   sts DDRD, r18            ; Store bitmask in ddrd reg.
   ldi r20, 0               ; Make reg 20 the zero reg.
 
-pushBtn:
-  call btnDelay
-  lds r19, PIND
-  andi r19, 0b00000100     ; Isolate the signal coming from the pin 2.
-  cpi r19, 0b00000100      ; Check the signal in pin 2.
-  breq onLed              ; Branch to onLed if there is signal in pin 2.
-  sts PORTD, r20           ; Off LED if there is no signal in pin 2.
-  rjmp pushBtn
 onLed:
   sts PORTD, r18           ; On LED if there is signal in pin 2.
-  rjmp pushBtn
+  call btnDelay
+  sts PORTD, r20
+  call btnDelay
+  rjmp onLed
 btnDelay:
-  ldi r21, 3              ; Note: delay loops are analogous to the multiple circular layers of an onion.
+  ldi r21, 100               ; Note: delay loops are analogous to the multiple circular layers of an onion.
 outer:
   ldi r22, 0xff
 inner:
