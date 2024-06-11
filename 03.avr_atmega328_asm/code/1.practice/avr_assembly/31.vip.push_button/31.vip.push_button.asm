@@ -1,5 +1,5 @@
 ; 1521mf sat 8jun2024
-; Emergency Vehicle Lightning. 
+; Emergency Vehicle Lightning: Push Button.
 
 ; STEPS:
 ;  - Write pushBtn logic. Use Arduino's digital pin 2 (pd2). Input.
