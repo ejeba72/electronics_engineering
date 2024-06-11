@@ -47,15 +47,6 @@ offToOn:
 sendOutput:
   sts PORTD, r25           ; On or off the LED as the case may be.
   rjmp toggleBtn
-  
-
-;  cpi r19, 0b00000100     ; Check the signal in pin 2.
-;  breq onLed              ; Branch to onLed if there is signal in pin 2.
-;  sts PORTD, r20          ; Off LED if there is no signal in pin 2.
-;  rjmp toggleBtn
-;onLed:
-;  sts PORTD, r18          ; On LED if there is signal in pin 2.
-;  rjmp toggleBtn
 btnDelay:
   ldi r21, 3               ; Note: delay loops are analogous to the multiple circular layers of an onion.
 outer:
