@@ -1,7 +1,7 @@
 ; 1521mf,? sat 8jun2024
 ; ?,? sun 9jun2024
 ; 1141mf mon 10jun2024
-; Emergency Vehicle Lightning. 
+; Emergency Vehicle Lightning: Toggle Button. 
 
 ; STEPS:
 ;  - Write pushBtn logic. Use Arduino's digital pin 2 (pd2). Input.
