@@ -24,6 +24,7 @@
 ; 5. Check ADIF flag in ADCSRA reg to ascertain if conversion is complete.
 ; 6. If no, start again from step 4.
 ; 7. If yes, read the data from from ADCL and ADCH.
+; 8. Start again from step 4.
 
 .device atmega328p
 
