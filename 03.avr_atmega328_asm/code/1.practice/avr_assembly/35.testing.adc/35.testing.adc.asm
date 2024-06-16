@@ -26,26 +26,37 @@
   ldi r19, 0
   sts DDRD, r18
   sts DDRB, r18
+blink:
+  sts PORTD, r18
+  call btnDelay
+  sts PORTD, r19
+  call btnDelay
+  sts PORTB, r18
+  call btnDelay
+  sts PORTB, r19
+  call btnDelay
+  rjmp blink
+
+
 ;blink:
+  ;sts PORTB, r19
   ;sts PORTD, r18
   ;call btnDelay
   ;sts PORTD, r19
-  ;call btnDelay
   ;sts PORTB, r18
-  ;call btnDelay
-  ;sts PORTB, r19
   ;call btnDelay
   ;rjmp blink
 
 
-blink:
-  sts PORTB, r19
-  sts PORTD, r18
-  call btnDelay
-  sts PORTD, r19
-  sts PORTB, r18
-  call btnDelay
-  rjmp blink
+
+;blink:
+  ;sts PORTD, r18
+  ;sts PORTB, r18
+  ;call btnDelay
+  ;sts PORTD, r19
+  ;sts PORTB, r19
+  ;call btnDelay
+  ;rjmp blink
 
 
 
@@ -53,8 +64,8 @@ blink:
   ;rjmp halt
 
 btnDelay:
-  ;ldi r21, 3                ; Note: delay loops are analogous to the multiple circular layers of an onion.
-  ldi r21, 30                ; Note: delay loops are analogous to the multiple circular layers of an onion.
+  ldi r21,   4                ; Note: delay loops are analogous to the multiple circular layers of an onion.
+  ;ldi r21, 30                ; Note: delay loops are analogous to the multiple circular layers of an onion.
 outer:
   ldi r22, 0xff
 inner:
