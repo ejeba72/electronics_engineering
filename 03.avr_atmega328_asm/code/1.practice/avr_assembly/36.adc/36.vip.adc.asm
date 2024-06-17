@@ -42,7 +42,7 @@
   ldi r18, 0
   sts DDRC, r18
 ; Set ADMUX reg
-  ldi r19, 0b11000000  ; internal voltage ref, ADC righ adjust result, adc0.
+  ldi r19, 0b11000000  ; internal voltage ref, ADC right adjust result, adc0.
   sts ADMUX, r19
 ; Set ADCSRA reg
   ldi r20, 0b10000111
