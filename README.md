@@ -14,10 +14,15 @@ I'm using this repo to sort of summarize or record what I learn along the way in
 - peripheral modules (also called module types)
 
 AVRDUDE RESOURCES:
-- Git repo: "https://github.com/avrdudes/avrdude"
-- Online documentation: "https://avrdudes.github.io/avrdude/"
-- pdf, v7.3: "https://avrdudes.github.io/avrdude/7.3/avrdude.pdf"
-- pdf, v5.1:  "https://www.cs.ou.edu/~fagg/classes/general/atmel/avrdude.pdf"
+- Git repo: https://github.com/avrdudes/avrdude
+- Online documentation: https://avrdudes.github.io/avrdude/
+- pdf, v7.3: https://avrdudes.github.io/avrdude/7.3/avrdude.pdf
+- pdf, v5.1:  https://www.cs.ou.edu/~fagg/classes/general/atmel/avrdude.pdf
+
+AVRA RESOURCES:
+- https://github.com/Ro5bert/avra
+- https://avra.sourceforge.net/README.html
+- https://manpages.debian.org/unstable/avra/avra.1.en.html
 
 RECOMMENDED HARDWARE FOR PROGRAMMING MICROCONTROLLERS:
 - usb-serial converter cable
@@ -81,11 +86,11 @@ ASSEMBLY LANGUAGE
   - type "arduino-cli compile -h" to know more about the compile command. The same approach for other commands.
 - Upload command:
   - "arduino-cli upload /home/user/Arduino/MySketch -p /dev/ttyACM0 -b arduino:avr:uno"
-  - NOTE: When uploading to Nano board with old bootloader, -b is "arduino:avr:nano:cpu=atmega328old". That is, include "cpu=atmega328old" to the board name flag. Source: "https://github.com/arduino/arduino-cli/issues/538".
+  - NOTE: When uploading to Nano board with old bootloader, -b is "arduino:avr:nano:cpu=atmega328old". That is, include "cpu=atmega328old" to the board name flag. Source: https://github.com/arduino/arduino-cli/issues/538.
 - Serial monitor tip:
   - "arduino-cli monitor -p /dev/ttyACMO"
 
 REFERENCES:
-- The C Programming Language, 2nd Edition (ANSI Edition): "https://ia903407.us.archive.org/35/items/the-ansi-c-programming-language-by-brian-w.-kernighan-dennis-m.-ritchie.org/The%20ANSI%20C%20Programming%20Language%20by%20Brian%20W.%20Kernighan%2C%20Dennis%20M.%20Ritchie.pdf"
-- Answers To The C Programming Language Exercises: "http://clc-wiki.net/wiki/K%26R2_solutions"
-- Atmel 8-bit microcontroller with 4/8/16/32kbytes in-system programmable flash: "https://web.archive.org/web/20160412093102/http://www.atmel.com/Images/Atmel-8271-8-bit-AVR-Microcontroller-ATmega48A-48PA-88A-88PA-168A-168PA-328-328P_datasheet_Summary.pdf"
+- The C Programming Language, 2nd Edition (ANSI Edition): https://ia903407.us.archive.org/35/items/the-ansi-c-programming-language-by-brian-w.-kernighan-dennis-m.-ritchie.org/The%20ANSI%20C%20Programming%20Language%20by%20Brian%20W.%20Kernighan%2C%20Dennis%20M.%20Ritchie.pdf
+- Answers To The C Programming Language Exercises: http://clc-wiki.net/wiki/K%26R2_solutions
+- Atmel 8-bit microcontroller with 4/8/16/32kbytes in-system programmable flash: https://web.archive.org/web/20160412093102/http://www.atmel.com/Images/Atmel-8271-8-bit-AVR-Microcontroller-ATmega48A-48PA-88A-88PA-168A-168PA-328-328P_datasheet_Summary.pdf
