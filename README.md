@@ -35,6 +35,9 @@ HOW TO PROGRAM AVR MICROCONTROLLER
     - Reset: Reset tells the AVR to enter programming mode
 - Of course, you will also need two additional wires for power connection. That is, power (VCC) and ground (GND).
 
+POINTER
+  A pointer is a value that is meant to be used as a memory address. (A pointer is a value in a register or memory address that is meant (or intended) to be used as memory address).
+
 ASSEMBLY LANGUAGE
 - "i" should (not always) mean "an immediate (value or data)" in a mnemonic.
 - Every line of assembly code is either:
@@ -53,11 +56,14 @@ ASSEMBLY LANGUAGE
     - [label:] instruction/directive [operands] [; comment]
     - The square brackets indicate that those components within the square brackets are optional for a line of instruction or directive. Also, it is possible to write a comment or a label in its own line. However, operands can only follow an instruction if required. In other words, operands cannot be written in seperate lines. Nonetheless, there is no need to cram or memorise these details the understanding would come naturally as one continues to learn and practice.
 
-LOAD PROGRAM MEMORY(LPM):
-- https://www.rjhcoding.com/avr-asm-pm.php
+I/O REGISTERS:
+https://www.rjhcoding.com/avr-asm-io.php
 
 SRAM AND EXTENDED I/O:
 - https://www.rjhcoding.com/avr-asm-sram.php
+
+LOAD PROGRAM MEMORY(LPM):
+- https://www.rjhcoding.com/avr-asm-pm.php
 
 ASSEMBLE AND FLASH ASSEMBLY CODE
 - "avra 06.filename.asm"
