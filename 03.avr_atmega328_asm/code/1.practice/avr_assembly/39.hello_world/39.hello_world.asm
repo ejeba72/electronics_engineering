@@ -15,7 +15,28 @@
 .equ UCSR0C = 0xc2
 .equ UBRR0L = 0xc4
 .equ UBRR0H = 0xc5
-.equ UBR0 = 0xc6
+.equ UDR0 = 0xc6
+
+; Set up
+  ldi r18, 0               ; Make r18 the zero reg.
+  ldi r19, 0x18
+  sts UCSR0B, r19
+  ldi r19, 0x06
+  sts UCSR0C, r19
+  ldi r19, 103
+  sts UBRR0L, r19
+  sts UBRR0H, r18
+
+; hello loop
+helloLoop:
+  lds r20, UCSR0A
+  andi r20, 0x20
+  cpi r20, 0x20
+  brne helloLoop
+  ldi r21, 104
+  sts UDR0, r21
+  rcall delay
+  rjmp helloLoop
 
 delay:
   push r18, r19, r20
