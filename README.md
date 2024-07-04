@@ -99,7 +99,13 @@ ASSEMBLE AND FLASH ASSEMBLY CODE
 - Upload command:
     - "arduino-cli upload /home/user/Arduino/MySketch -p /dev/ttyACM0 -b arduino:avr:uno"
     - NOTE: When uploading to Nano board with old bootloader, -b is "arduino:avr:nano:cpu=atmega328old". That is, include "cpu=atmega328old" to the board name flag. Source: https://github.com/arduino/arduino-cli/issues/538.
-- Serial monitor tip:
+
+SERIAL MONITOR FROM THE COMMANDLINE
+- screen:
+    - "screen /dev/ttyACMO 9600"  (i.e. screen path baudrate)
+- stty:
+    - "stty -f /dev/ttyACMO speed 9600" (-f for freebsd, mac. -F for Linus ditros)
+- arduino-cli:
     - "arduino-cli monitor -p /dev/ttyACMO"
 
 REFERENCES:
