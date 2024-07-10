@@ -104,9 +104,9 @@ SERIAL MONITOR FROM THE COMMANDLINE
 - screen:
     - "screen /dev/ttyACMO 9600"  (i.e. screen path baudrate)
 - stty:
-    - "stty -f /dev/ttyACMO speed 9600" (-f for freebsd, mac. -F for Linus ditros)
+    - "stty -f /dev/ttyACMO speed 9600" ("-f" for freebsd, mac. "-F" for Linus ditros. I assume that "-f" or "-F" stands for "filepath". I stand to be corrected. :) )
 - arduino-cli:
-    - "arduino-cli monitor -p /dev/ttyACMO"
+    - "arduino-cli monitor -p /dev/ttyACMO" (I assume that "-p" stands for "path" which is the same as "filepath". Again, I stand to be corrected.)
 
 REFERENCES:
 - The C Programming Language, 2nd Edition (ANSI Edition):
