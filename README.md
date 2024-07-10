@@ -102,7 +102,7 @@ ASSEMBLE AND FLASH ASSEMBLY CODE
 
 SERIAL MONITOR FROM THE COMMANDLINE
 - screen:
-    - "screen /dev/ttyACMO 9600"  (i.e. screen path baudrate)
+    - "screen /dev/ttyACMO 9600"  (i.e. [SCREEN] [PATH] [BAUDRATE])
 - stty:
     - "stty -f /dev/ttyACMO speed 9600" (Use "-f" for freebsd and mac. Use "-F" for Linux distros. I assume that "-f" or "-F" stands for "filepath". I stand to be corrected. :) )
 - arduino-cli:
