@@ -102,11 +102,11 @@ ASSEMBLE AND FLASH ASSEMBLY CODE
 
 SERIAL MONITOR FROM THE COMMANDLINE
 - screen:
-    - "screen /dev/ttyACMO 9600"  (i.e. [SCREEN] [PATH] [BAUDRATE])
+    - "screen /dev/ttyACMO 9600"  (i.e. screen [PATH] [BAUDRATE])
 - stty:
     - "stty -f /dev/ttyACMO speed 9600" (Use "-f" for freebsd and mac. Use "-F" for Linux distros. I assume that "-f" or "-F" stands for "filepath". I stand to be corrected. :) )
 - arduino-cli:
-    - "arduino-cli monitor -p /dev/ttyACMO" (I assume that "-p" stands for "path" which is the same as "filepath". Again, I stand to be corrected.)
+    - "arduino-cli monitor -p /dev/ttyACMO" (I assume that "-p" stands for "path" which should be the same as "filepath". Again, I stand to be corrected.)
 
 REFERENCES:
 - The C Programming Language, 2nd Edition (ANSI Edition):
