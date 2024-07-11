@@ -1,8 +1,6 @@
 ; 2117mf wed jul10,2024
 ; "hello, world" Program
 
-;
-
 .device atmega328p
 
 .equ UCSR0A = 0xc0
@@ -38,6 +36,26 @@ helloLoop:
   call writeLoop
   ldi r20, 111             ; ascii val for '0'
   call writeLoop
+  ldi r20, 44             ; ascii val for 'comma'
+  call writeLoop
+  ldi r20, 32             ; ascii val for 'space'
+  call writeLoop
+  ldi r20, 119             ; ascii val for 'w'
+  call writeLoop
+  ldi r20, 111             ; ascii val for 'o'
+  call writeLoop
+  ldi r20, 114             ; ascii val for 'r'
+  call writeLoop
+  ldi r20, 108             ; ascii val for 'l'
+  call writeLoop
+  ldi r20, 100             ; ascii val for 'd'
+  call writeLoop
+  ldi r20, 10             ; ascii val for 'line feed'
+  call writeLoop
+  ldi r20, 10             ; ascii val for 'line feed'
+  call writeLoop
+  ldi r20, 13             ; ascii val for 'carriage return'
+  call writeLoop
 rjmp helloLoop
 
 writeLoop:
@@ -46,7 +64,7 @@ writeLoop:
   cpi r18, 0x20
   brne writeLoop           ; branch to writeLoop if UDRE0 bit is cleared.
   mov r19, r20
-  sts UDR0, r19
+  sts UDR0, r19            ; for me personally, this line of code "sts UDR0, r19" is the most important line in this code. Every other line of code is playing a supportive role to this line of code. Well, that's the way I imagine it in my head! :)
   call delay
   ret
 
