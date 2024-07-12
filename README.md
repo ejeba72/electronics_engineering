@@ -6,6 +6,10 @@ My name is Emmanuel.
 
 I'm using this repo to sort of summarize or record what I learn along the way in electronics.
 
+ACCRONYMS:
+  - reg: register
+  - val: value
+
 "BUILDING BLOCKS" OF A MICROCONTROLLER:
 - cpu
 - ram (e.g. sram)
@@ -108,6 +112,23 @@ SERIAL MONITOR FROM THE COMMANDLINE
     - Second step: "cat /dev/ttyACMO"
 - arduino-cli:
     - "arduino-cli monitor -p /dev/ttyACMO" (I assume that "-p" stands for "path" which should be the same as "filepath". Again, I stand to be corrected.)
+
+ANALOG TO DIGITAL CONVERTER PROGRAM, BASIC STEPS:
+    1. Set the ADMUX and ADCSRA regs to your desired preferences.
+    2. Set the desired pin(s) in the analog port (DDRC) as input reg.
+    3. Set the desired pins in DDRD and/or DDRB port as output reg.
+    4. Start the ADC conversion by setting the ADSC bit (bit6) in ADCSRA reg.
+    5. Check if the the ADC conversion is complete by checking if the ADIF flag (bit4) in ADCSRA reg is set.
+    6. If no, start again from step 4.
+    7. If yes, read the data from from ADCL and ADCH.
+    8. Start again from step 4.
+
+SERIAL MONITOR PROGRAM, BASIC STEPS:
+    1. You will be working with the UCSR0A, UCSR0B, UCSR0C, UBRR0L, UBRR0H, and UDR0.
+    2. Initialise UCSR0B, UCSR0C, UBRR0L and UBRR0H regs with your desired vals.
+    3. Check if the UDRE0 bit (bit5) in the UCSR0A reg is set.
+    4. If no, repeat step 3.
+    5. If yes, write an ascii val to the UDR0 reg.
 
 REFERENCES:
 - The C Programming Language, 2nd Edition (ANSI Edition):
