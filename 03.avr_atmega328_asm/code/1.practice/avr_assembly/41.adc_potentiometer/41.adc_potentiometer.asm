@@ -34,8 +34,8 @@ readAdc:
   brne readAdc
   lds r18, ADCH
   mov r20, r18
-  lsl r20             ; PARTIALLY CORRECT: {Note: you can also use 'andi' or 'and' instead of logical shift.
-  lsl r20             ; If you wish to use 'andi', then 'andi r20, 0x3f'.}
+  lsl r20
+  lsl r20
   sts PORTD, r20
   mov r20, r18
   ;andi r20, 0xc0
