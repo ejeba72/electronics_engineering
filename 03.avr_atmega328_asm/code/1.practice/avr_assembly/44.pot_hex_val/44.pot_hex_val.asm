@@ -71,21 +71,33 @@ readAdc:
   sts PORTB, r20
 
 
-  mov r20, r18        ; Write to USART.
+  mov r20, r18        ; Write to USART. Start with processing most significant nimble.
   andi r20, 0xf0      ; Mask least significant nimble, in order to 'process' most significant nimble.
   swap r20
   add r20, r22
+  cpi r20, 58
+  brge addSeven
   call writeToUsart
-  
+  rjmp leastSignificantNimble
+addSeven:
+  add r20, r23
+  call writeToUsart
 
 
+leastSignificantNimble:
   mov r20, r18
   andi r20, 0x0f
   add r20, r22
+  cpi r20, 58
+  brge add7
+  call writeToUsart
+  rjmp lineFeed
+add7:
+  add r20, r23
   call writeToUsart
 
 
-
+LineFeed:
   ldi r20, 10
   call writeToUsart
   ldi r20, 13
