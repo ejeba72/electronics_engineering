@@ -45,8 +45,6 @@
   sts UBRR0L, r18
   ldi r18, 0
   sts UBRR0H, r18
-
-
   ldi r22, 48         ; 48 is the ascii val for zero.
   ldi r23, 7          ; 7 is the positional offset of the character 'A' on the ascii table.
 ; ADC-Potentiometer Loop
@@ -69,8 +67,6 @@ readAdc:
   lsr r20
   lsr r20
   sts PORTB, r20
-
-
   mov r20, r18        ; Write to USART. Start with processing most significant nimble.
   andi r20, 0xf0      ; Mask least significant nimble, in order to 'process' most significant nimble.
   swap r20
@@ -82,8 +78,6 @@ readAdc:
 addSeven:
   add r20, r23
   call writeToUsart
-
-
 leastSignificantNimble:
   mov r20, r18
   andi r20, 0x0f
@@ -95,21 +89,13 @@ leastSignificantNimble:
 add7:
   add r20, r23
   call writeToUsart
-
-
 LineFeed:
   ldi r20, 10
   call writeToUsart
   ldi r20, 13
   call writeToUsart
   call delay
-
-
-
   rjmp readAdc
-
-
-
 writeToUsart:
   lds r21, UCSR0A
   andi r21, 0x20
@@ -117,8 +103,6 @@ writeToUsart:
   brne writeToUsart
   sts UDR0, r20       ; Write into the UDR0 reg, if the UDRE0 bit (bit5) in the UCSR0A reg is set.
   ret
-
-
 delay:
   push r18
   push r19
