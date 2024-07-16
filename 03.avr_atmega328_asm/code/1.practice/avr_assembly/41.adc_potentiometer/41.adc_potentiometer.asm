@@ -18,7 +18,7 @@
   sts ADMUX, r18
   ldi r19, 0x87       ; 0b10000111 = 0x87 (Dedicate r19 to ADCSRA, because its val will be modified).
   sts ADCSRA, r19
-  ori r19, 0x40       ; 0x40 = 0b01000000 (Set the bit0. This new value will be used to start conversion.)
+  ori r19, 0x40       ; 0x40 = 0b01000000 (Set the bit6. This new value will be used to start conversion.)
   ldi r18, 0
   sts DDRC, r18       ; set DDRC as input reg by clearing its bits.
   ldi r18, 0xff
