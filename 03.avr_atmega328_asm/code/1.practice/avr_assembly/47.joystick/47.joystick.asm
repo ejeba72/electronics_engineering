@@ -1,6 +1,8 @@
 ; 2127mf mon 15jul2024 { My 35th birthday! Yahh! :) }
 ; Joystick Setup. My First Attempt In Assembly Language.
 
+; Update, 2043mfgh wed 17jul2023: Omo! This project ehnn! E don do me shege, pro max! :( I neva even finish self! It's been about two full days of sweat and blood! I've spent more time debugging and debugging and debugging!!! However, the beauty is that I am the one doing it myself with the datasheet, atmega328p pin/arduino port diagram, ascii table, my limited assembly language programming, loads of creativity, improvisation and ingenuity as well as several trial and error! It's been frustrating and yet rewarding because it's a learning journey and an adventure, in and of itself, into uncharted territories (I don't have any tutorial to watch on programming joystick and writing the joystick input to serial monitor). Rather, I am leveraging the little I've learnt on ADC, USART and Potentiometer and my limited assembly skill to do this. The only regret I have is the time sacrificed on this project. I wish I could have done this in less time, so that I can do more projects per time.
+
 ; Steps:
 ; - Write to serial monitor.
 ; - Read from joystick
