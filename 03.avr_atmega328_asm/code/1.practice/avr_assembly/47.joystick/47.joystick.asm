@@ -65,19 +65,6 @@ serialWrite:
 
   call xAxis
 
-
-  ;rjmp xAxis
-;printX:
-
-  ;mov r20, r18             ; Thousands counter
-  ;call writeToUdr
-  ;mov r20, r19             ; Hundreds counter
-  ;call writeToUdr
-  ;mov r20, r21             ; Tens counter
-  ;call writeToUdr
-  ;mov r20, r25             ; Units counter
-  ;call writeToUdr
-
   ldi r20, 32              ; space
   call writeToUdr
   ldi r20, 121             ; 'y'
@@ -99,26 +86,11 @@ serialWrite:
 
   call yAxis
 
-
-  ;rjmp yAxis
-;printY:
-
-  ;ldi r20, 48              ; '0'
-  ;call writeToUdr
-  ;ldi r20, 48              ; '0'
-  ;call writeToUdr
-  ;ldi r20, 48              ; '0'
-  ;call writeToUdr
-
   ldi r20, 10              ; Line Feed
   call writeToUdr
   ldi r20, 13              ; Carriage Return
   call writeToUdr
   call delay
-
-
-  ;ret
-  ;rjmp initialiseAdc
   rjmp serialWrite
 
 readJoystick:
@@ -304,7 +276,6 @@ add48:            ; 48 is the ascii val for 0. It needs to be added to each coun
   call writeToUdr
   mov r20, r25
   call writeToUdr
-
   ret
 
 writeToUdr:
@@ -334,7 +305,6 @@ firstLoop:
   pop r18, r19, r20
   ret
 
-
 xAxis:
   push r18
   ldi r18, 0xc0            ; For x-axis (ADC0, i.e. PC0 or A0)
@@ -352,11 +322,7 @@ yAxis:
   ;rjmp printY
   ret
 
-
-
 ; Debug subroutine. I used this subroutine to debug my code.
-call debug
-
 debug:
 push r26
 ldi r26, 48
