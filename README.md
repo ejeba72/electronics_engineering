@@ -60,6 +60,17 @@ ASSEMBLY LANGUAGE
     - [label:] instruction/directive [operands] [; comment]
     - The square brackets indicate that those components within the square brackets are optional for a line of instruction or directive. Also, it is possible to write a comment or a label in its own line. However, operands can only follow an instruction if required. In other words, operands cannot be written in seperate lines. Nonetheless, there is no need to cram or memorise these details the understanding would come naturally as one continues to learn and practice.
 
+LABEL: A label is an arbitrary name that is used to "label" (identify) a memory location. Furthermore, a label can also be used to initialise a constant or variable.
+
+NOTE: To the best of my knowledge so far, a symbol is a synonym of a label. That is, a symbol is effectively the same thing as a label in assembly language. However, I perceive that there may be nuance or technical difference between the two. It could be that a symbol is a type of label. Related terms: label, symbol, symbolic label.
+
+ASSEMBLER DIRECTIVES
+- SET: Set a label equal to an expression.
+    The set directive assigns a value to a label. This label can then be used in later expressions. A label assigned to a value by the set directive can be changed (redefined) later in the program.
+
+- EQU: Set a label equal to an expression.
+    The equ directive assigns a value to a label. This label can then be used in later expressions. Unlike the set directive, a label assigned to a value by the equ directive is a constant and cannot be changed or redefined.
+
 I/O REGISTERS:
 https://www.rjhcoding.com/avr-asm-io.php
 
@@ -134,6 +145,10 @@ SERIAL MONITOR PROGRAM, BASIC STEPS:
 5. If yes, write an ascii val to the UDR0 reg.
 
 REFERENCES:
+- set directive:
+    - https://onlinedocs.microchip.com/pr/GUID-E06F3258-483F-4A7B-B1F8-69933E029363-en-US-2/index.html?GUID-21F01B2A-E5C5-4E4B-97B1-F6664744A510
+- equ directive:
+    - https://onlinedocs.microchip.com/pr/GUID-E06F3258-483F-4A7B-B1F8-69933E029363-en-US-2/index.html?GUID-B43C78EC-F26F-4DD4-AA2B-7973B3C6A4A1
 - The C Programming Language, 2nd Edition (ANSI Edition):
     - https://ia903407.us.archive.org/35/items/the-ansi-c-programming-language-by-brian-w.-kernighan-dennis-m.-ritchie.org/The%20ANSI%20C%20Programming%20Language%20by%20Brian%20W.%20Kernighan%2C%20Dennis%20M.%20Ritchie.pdf
 - Answers To The C Programming Language Exercises:
