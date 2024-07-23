@@ -40,7 +40,7 @@ HOW TO PROGRAM AVR MICROCONTROLLER
 - Of course, you will also need two additional wires for power connection. That is, power (VCC) and ground (GND).
 
 POINTER
-  A pointer is a value that is meant to be used as a memory address. (A pointer is a value in a register or memory address that is meant (or intended) to be used as memory address).
+- A pointer is a value that is meant to be used as a memory address. (A pointer is a value in a register or memory address that is meant (or intended) to be used as memory address).
 
 ASSEMBLY LANGUAGE
 - "i" should (not always) mean "an immediate (value or data)" in a mnemonic.
