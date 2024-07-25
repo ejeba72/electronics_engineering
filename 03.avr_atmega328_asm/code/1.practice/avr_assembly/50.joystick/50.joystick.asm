@@ -1,4 +1,4 @@
-; 1943wat thu 25jun2024
+; 1943,2210wat thu 25jun2024
 ; Basic Joystick Setup
 
 ; NOTE: The difference between '.equ', '.def', and '.set' is that each is uniquely applied to a const, reg, and var respectively. Otherwise, they do the same thing, which is to set or assign a label to a value.
