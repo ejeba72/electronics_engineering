@@ -7,7 +7,9 @@ My name is Emmanuel.
 I'm using this repo to sort of summarize or record what I learn along the way in electronics.
 
 IMPORTANT TERMS:
-  - Pointer: A pointer is a value that is meant to be used as a memory address. That is, A pointer is a value in a register or memory address that is intended to be used as a memory address.
+  - Pointer [both old and new understanding should be accurate because is a variable is a name-value pair]:
+    -- [my old understanding for Assembly and C]: A pointer is a value that is meant to be used as a memory address. That is, A pointer is a value in a register or memory address that is intended to be used as a memory address.
+    -- [my new understanding for C]: A pointer is a variable that contains the address of a variable.
   - Set a bit: Write 1 to a bit.
   - Clear a bit: Write 0 to a bit.
   - Set a register: Write 1 to every bit in a register.
