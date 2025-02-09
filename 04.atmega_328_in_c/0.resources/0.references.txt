@@ -1,0 +1,8 @@
+REFERENCES
+2024.jan17 wed 1114mf
+
+* Programming AVR Microcontrollers in C - O'Reilly Webcast: "https://youtu.be/ERY7d7W-6nA"
+* Cornell University AVR microcontroller lectures 2012: "https://www.youtube.com/playlist?list=PLD7F7ED1F3505D8D5"
+* Cornell University School of Electrical and Computer Engineering: "https://www.youtube.com/@ece4760/playlists"
+* Modern Embedded Systems Programming Course: "https://www.youtube.com/playlist?list=PLPW8O6W-1chwyTzI3BHwBLbGQoPFxPAPM"
+* Microcontroller Programming without IDE (Makefile + Toolchain) | Embedded System Project Series #5: "https://youtu.be/HCfq44NNBaU"
