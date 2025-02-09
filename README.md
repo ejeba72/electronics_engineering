@@ -89,8 +89,10 @@ SRAM AND EXTENDED I/O:
 LOAD PROGRAM MEMORY(LPM):
 - https://www.rjhcoding.com/avr-asm-pm.php
 
-ASSEMBLE AND FLASH ASSEMBLY CODE
+ASSEMBLE ASSEMBLY PROGRAM:
 - "avra 06.filename.asm"
+
+FLASH INTO MICROCONTROLLER:
 - "avrdude -U flash:w:filename.hex:i -c arduino -p atmega328p -P /dev/cu.usbserial-11230 -b 115200"
 - BREAKDOWN: The above command has 6 components (an executable command and 5 flags)
     - "avrdude": this is the executable command.
@@ -99,7 +101,7 @@ ASSEMBLE AND FLASH ASSEMBLY CODE
     - "-U" flag: indicates that a memory operation is to be performed. It could be write, read or erase memory operation.
         - "flash": indicates that the memory in which a memory operation would performed on, is the flash memory.
         - "w": write memory operation.
-        - "i": indicate that the file is intex HEX format.
+        - "i": indicate that the file is intex HEX format (":i" could be optional).
     - "-c" flag: specifies the programmer to be used to program the microcontroller.
     - "-P" flag: specifies the port to which the programmer is connected.
         - NOTE: you can use the following commands to find the port where the programmer is connected on your computer:
@@ -110,10 +112,57 @@ ASSEMBLE AND FLASH ASSEMBLY CODE
                     - NOTE: cu (communications, unbuffered) is preferred to tty (teletype) when flashing microcontrollers.
                 - Windows: "mode" This will list all available COM ports in Command Prompt.
     - "-b" flag: specifies the baud rate for communication with the programmer. Default baud rate is 115200 baud. That is, no need to specify baud rate, if baud rate is 115200 baud.
-        - NOTE: For Nano, baud rate is 57600 baud (115200/2). That is, "-b 57600".
+        - NOTE: For Nano, baud rate is 57600 baud (115200/2). That is, "-b 57600". However, it could be that the baud rate of newer Nano boards may be 115200. So if 57600 doesn't work, try 115200 and vice versa.
 - GENERAL TIPS: Provided avrdude has been installed, you can type the following on the commandline for help or more info:
     - "man avrdude"
     - "avrdude -h"
+
+C LANGUAGE
+
+TOOLS REQUIRED FOR COMPILING AND FLASHING C CODE
+
+MACOS:
+AVR-GCC TOOLCHAIN:
+- brew tap osx-cross/avr
+- brew install avr-gcc
+NOTE: avr-gcc toolchain contains several tools including avr-gcc and avr-objcopy commands.
+AVRDUDE:
+- brew install avrdude
+
+LINUX:
+I'm yet to know.
+
+WINDOWS:
+I'm yet to know.
+
+COMPILE C PRGRAM:
+- "avr-gcc -mmcu=atmega328p -DF_CPU=16000000UL -Os -o blink.elf blink.c"
+BREAKDOWN:
+    - -mmcu=atmega328p: Target ATmega328P (Nano's microcontroller).
+    - -DF_CPU=16000000UL: Clock frequency of 16 MHz.
+    - -Os: Optimize for size.
+    - -o blink.elf: Output file for the compiled object.
+
+CONVERT ".elf" FILE TO ".hex" FILE.
+- "avr-objcopy -O ihex -R .eeprom blink.elf blink.hex"
+BREAKDOWN:
+    - avr-objcopy: Tool to convert and extract sections from object files.
+    - -O: the -O flag should stand for 'output format'. Good mnemonic. But subject to confirmation.
+    - ihex: Output format is Intel HEX, suitable for microcontroller flashing.
+    - -R: The -R flag should stand for remove. At least it's a good mnemonic.
+    - .eeprom: Excludes the .eeprom section (which may contain EEPROM data) from the output.
+    - blink.elf: Input file in ELF format (with program and debug data).
+    - blink.hex: Output file in HEX format, ready for flashing.
+    NOTE: Follow the order of the flags for this command, especially for the last two components, the input and output files. I suspect that the output file must be the last component of this command. I will confirm all these as soon as the opportunity arises to learn more.
+
+FLASH INTO MICROCONTROLLER:
+- "avrdude -c arduino -p m328p -P /dev/tty.usbserial-XXXXXX -b 115200 -U flash:w:blink.hex"
+BREAKDOWN:
+    - -c arduino: Specifies the Arduino protocol.
+    - -p m328p: Microcontroller type (ATmega328P).
+    - -P /dev/tty.usbserial-XXXXXX: Serial port for Nano (update based on your device).
+    - -b 115200: Baud rate for Nano bootloader.
+    - -U flash:w:blink.hex: Write the hex file to flash memory.
 
  ARDUINO-CLI
 - General tip, provided arduino-cli has been installed:
