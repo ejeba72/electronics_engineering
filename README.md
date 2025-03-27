@@ -178,7 +178,7 @@ SERIAL MONITOR FROM THE COMMANDLINE
     - "screen /dev/ttyACMO 9600"  (i.e. screen [PATH] [BAUDRATE])
     - "C-a C-\", to quit.
     - "C-a ?", for help.
-- stty:
+- stty (set teletype):
     - First step: "stty -f /dev/ttyACMO speed 9600" (Use "-f" for freebsd and mac. Use "-F" for Linux distros. I assume that "-f" or "-F" stands for "filepath". I stand to be corrected. :) )
     - Second step: "cat /dev/ttyACMO"
     - "C-c", to quit.

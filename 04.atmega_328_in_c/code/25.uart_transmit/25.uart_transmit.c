@@ -1,0 +1,4 @@
+// 0929am fri21mar2025
+// I've been failing in my past attempts. I have materials from my Embedded systems colleagues that I want to try out here. Let me see if this will work.
+
+// 0844pm fri21mar2025: Even the anticipated material I got from my embedded-systems-engineering (ESE) colleagues is giving me challenges. Consequently, I have decided to pause learning serial communication for now, as I am fast running out of time for my various academic commitments for 3rd period. When I'm a bit more free, I would start from scratch with learning AVR C using the ESE material. I believe that I don't need serial communication and ADC to do my microcontroller assignment, the 'Binary Counter'. So the next set of programming activities will be the development of the Binary Counter. After which, it will be starting from scratch with the ESE material.
