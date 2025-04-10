@@ -8,8 +8,8 @@ I'm using this repo to sort of summarize or record what I learn along the way in
 
 IMPORTANT TERMS:
   - Pointer:
-  -- Basically, a pointer is a value that is meant to be used as a memory address. That is, A pointer is a value in a register or memory address that is intended to be used as a memory address.
-  -- In the context of C, pointer is a variable that contains the memory address of a variable.
+    - Basically, a pointer is a value that is meant to be used as a memory address. That is, A pointer is a value in a register or memory address that is intended to be used as a memory address.
+    - In the context of C, pointer is a variable that contains the memory address of a variable.
   - Variable: A variable is a named reference to a location in memory that holds data, and this data can change during execution
   - Set a bit: Write 1 to a bit.
   - Clear a bit: Write 0 to a bit.
