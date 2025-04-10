@@ -9,7 +9,7 @@ I'm using this repo to sort of summarize or record what I learn along the way in
 IMPORTANT TERMS:
   - Pointer:
     - Basically or conceptually, a pointer is a value that is meant to be used as a memory address. That is, A pointer is a value in a register or memory address that is intended to be used as a memory address.
-    - In assembly language, you can simply decide to place a value (that is actually the address of any memory address you're interested in) in a register or memory address of your choice.
+    - In assembly language, you can simply decide to place a value (that is actually the address of any memory location you're interested in) in a register or memory address of your choice.
     - In the context of C language, a pointer is a variable and/or the value in such a variable. This value is actually the memory address of a variable you're interested in.
   - Variable: A variable is a named reference to a location in memory that holds data, and this data can change during execution
   - Set a bit: Write 1 to a bit.
