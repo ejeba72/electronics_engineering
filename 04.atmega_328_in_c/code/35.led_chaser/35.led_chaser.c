@@ -7,21 +7,20 @@
 #include<avr/io.h>
 #include<util/delay.h>
 
-#define LED1 0
-#define LED2 1
-#define LED3 2
-#define LED4 3
-#define LED5 4
-#define LED6 5
+#define FIRST_LED 0
 
+int current_led;
 int main(void) {
   // initializations
   DDRB = 0x3F;
   // event loop
   while (1) {
-    PORTB = 0x07;
-    _delay_ms(20);
-    PORTB = 0X38;
-    _delay_ms(20);
+    current_led = 0;
+    while (current_led < 6) {
+      PORTB = 0x01 << current_led;
+      _delay_ms(10);
+      //_delay_us(1500);
+      current_led++;
+    }
   }
 }
